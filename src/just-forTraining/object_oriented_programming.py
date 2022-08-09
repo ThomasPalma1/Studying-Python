@@ -1,5 +1,5 @@
 class Student:
-    def __int__(self, name, grades):
+    def __init__(self, name, grades):
         self.name = name
         self.grades = grades
 
@@ -7,6 +7,6 @@ class Student:
         return sum(self.grades) / len(self.grades)
 
 
-student = Student("Bob", (90, 90, 93, 78, 90))
+student = Student("Bob", (100, 100, 93, 78, 90))
 print(student.name)
 print(student.average_grade())
